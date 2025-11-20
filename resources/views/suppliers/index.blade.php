@@ -61,8 +61,8 @@
                 {{-- TABEL SUPPLIER --}}
                 <div class="card border-0 shadow-sm">
                     <div class="card-body table-responsive p-0">
-                        <table cltable mb-0 align-middle table-modern" id="supplier-table">
-                            <thead>ass="
+                        <table class="table mb-0 align-middle table-modern" id="supplier-table">
+                            <thead>
                                 <tr>
                                     <th style="width: 50px">#</th>
                                     <th>Nama Supplier</th>
@@ -274,7 +274,6 @@
             position: relative;
             flex: 1;
         }
-
 
 
         .myiconG {
