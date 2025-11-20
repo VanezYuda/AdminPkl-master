@@ -1,0 +1,109 @@
+/* Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+}
+
+/* Modal box */
+.delete-modal {
+    position: fixed;
+    top: 60%;
+    left: 60%;
+    transform: translate(-80%, -70%);
+    width: 430px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Warning icon */
+.warning-icon {
+    background: #ffe0e0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.warning-icon span {
+    font-size: 32px;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Close button */
+.close-btn {
+    margin-bottom: 15%;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #777;
+}
+
+/* Title */
+.modal-title {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+/* Text */
+.modal-text {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Buttons container */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Cancel button */
+.cancel-btn {
+    background: #f2f2f2;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 48%;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #e45454;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    right: 48%;
+}
+
+.delete-btn:hover {
+    background: #d63d3d;
+}

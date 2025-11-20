@@ -1,0 +1,202 @@
+/* ===================== */
+/*     STYLE TABLE        */
+/* ===================== */
+.page-container {
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.table-wrapper {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th,
+table td {
+    width: 0%;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-edit {
+    background: #16a34a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background: #dc2626;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===================== */
+/*        MODAL          */
+/* ===================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    width: 420px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 95%;
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.modal-btn-group {
+    text-align: right;
+}
+
+.close-btn {
+    padding: 8px 12px;
+    background: #ccc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.save-btn {
+    padding: 8px 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.close-btn:hover {
+    background: #b1b1b1;
+}
+
+.save-btn:hover {
+    background: #1d4ed8;
+}
+
+/* ===================== */
+/*     CONTEXT MENU      */
+/* ===================== */
+#contextMenu {
+    position: fixed;
+    display: none;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 120px;
+    z-index: 1000;
+}
+
+#contextMenu button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+#contextMenu button:hover {
+    background: #f0f0f0;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.pagination-info {
+    color: #555;
+}
+
+.pagination-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rows-label select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 13px;
+}
+
+.page-number {
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #444;
+}
+
+.page-btn {
+    padding: 4px 10px;
+    border: 1px solid #b589ff;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.page-btn:hover {
+    background: #f3e8ff; /* ungu muda */
+}

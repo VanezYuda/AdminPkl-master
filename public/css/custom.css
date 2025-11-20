@@ -1,0 +1,31 @@
+
+html[data-pc-theme="dark"] table {
+    background-color: #1e1e1e !important;
+    color: #eaeaea !important;
+}
+
+html[data-pc-theme="dark"] table thead th {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+html[data-pc-theme="dark"] table tbody tr {
+    background-color: #1c1c1c !important;
+}
+
+html[data-pc-theme="dark"] table tbody tr:hover {
+    background-color: #333333 !important;
+}
+
+html[data-pc-theme="dark"] input,
+html[data-pc-theme="dark"] .btn,
+html[data-pc-theme="dark"] .form-control {
+    background-color: #2a2a2a !important;
+    color: #fff !important;
+    border-color: #444 !important;
+}
+
+html[data-pc-theme="dark"] .card,
+html[data-pc-theme="dark"] .table-responsive {
+    background-color: #1f1f1f !important;
+}
